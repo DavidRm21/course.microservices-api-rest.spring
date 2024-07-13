@@ -1,14 +1,14 @@
 spring:
   application:
-    name: customer
+    name: transactions
 
 server:
-  port: 8001
+  port: 8003
   servlet:
-    context-path: ${APP_PATH}
+    context-path: /transaction
 
 springdoc:
   swagger-ui:
     path: /swagger.html
   api-docs:
-    enabled: ${SWAGGER_ENABLED}
+    enabled: true

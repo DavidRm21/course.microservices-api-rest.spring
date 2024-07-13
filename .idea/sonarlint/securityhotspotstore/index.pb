@@ -23,3 +23,15 @@ Hproduct/src/main/java/com/paymentchain/repository/ProductRepository.java,a\e\a
 Rproduct/src/main/java/com/paymentchain/controller/ProductControllerController.java,5\b\5ba5f16f88e5614d87bd9900c305f92732252c46
 x
 Hproduct/src/main/java/com/paymentchain/controller/ProductController.java,e\b\eb0c6da7ed95ab16804d8b080dd118531a10b75c
+v
+Ftransactions/src/main/java/com/paymentchain/entities/Transactions.java,a\8\a85d0d8c08c505c543bbab86de852e1618441975
+Å
+Qtransactions/src/main/java/com/paymentchain/repository/TransactionRepository.java,0\4\04dd212e564043aa967320f7bdfc1c3472e1b93a
+Å
+Qtransactions/src/main/java/com/paymentchain/controller/TransactionController.java,7\6\762cdc3df090d8aea770e79a4c085fcda07181d4
+I
+transactions/build.gradle,5\c\5cea398aff78b0a071a79eb740ff9375b5742d51
+D
+product/build.gradle,a\7\a76cbfcb530149cde8a9645b1e4835c843c7aa6a
+u
+Ecustomer/src/main/java/com/paymentchain/entities/CustomerProduct.java,3\5\357dc26b1f3c06f86b799cc3ddb96a392f01ab51

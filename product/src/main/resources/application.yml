@@ -1,14 +1,14 @@
 spring:
   application:
-    name: customer
+    name: product
 
 server:
-  port: 8001
+  port: 8002
   servlet:
-    context-path: ${APP_PATH}
+    context-path: /product
 
 springdoc:
   swagger-ui:
     path: /swagger.html
   api-docs:
-    enabled: ${SWAGGER_ENABLED}
+    enabled: true

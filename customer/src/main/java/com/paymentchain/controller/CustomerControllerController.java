@@ -36,6 +36,7 @@ public class CustomerControllerController {
 
     @PostMapping
     public ResponseEntity<?> save(@RequestBody Customer newCustomer) {
+        newCustomer.getProducts().forEach(p -> p.setCustomer(newCustomer));
         Customer customerSave = customerRepository.save(newCustomer);
         return ResponseEntity.ok(customerSave);
     }
@@ -46,6 +47,10 @@ public class CustomerControllerController {
         if (customer != null){
             customer.setName(updateCustomer.getName());
             customer.setPhone(updateCustomer.getPhone());
+            customer.setAddress(updateCustomer.getAddress());
+            customer.setIban(updateCustomer.getIban());
+            customer.setCode(updateCustomer.getCode());
+            customer.setSurname(updateCustomer.getSurname());
             Customer save = customerRepository.save(customer);
             return ResponseEntity.ok(save);
         }
