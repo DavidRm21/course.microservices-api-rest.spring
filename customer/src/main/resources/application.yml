@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: customer
+
+server:
+  port: 8001
+  servlet:
+    context-path: ${APP_PATH}
