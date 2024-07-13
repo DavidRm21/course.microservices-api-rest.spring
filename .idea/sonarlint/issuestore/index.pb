@@ -15,3 +15,11 @@ G
 billing/deployment/.env,8\b\8be281d6f112c4e3491d7d8fe04327d1c908e78a
 D
 billing/build.gradle,9\d\9df29bfd211eb7a82df59caf18333cd786f58ad8
+l
+<product/src/main/java/com/paymentchain/entities/Product.java,1\9\192ee537ab796d78126611a4b90d1c65647f1b84
+x
+Hproduct/src/main/java/com/paymentchain/repository/ProductRepository.java,a\e\aee7ba9e3d1142e07ab5f2bc87fbace419e9e610
+‚
+Rproduct/src/main/java/com/paymentchain/controller/ProductControllerController.java,5\b\5ba5f16f88e5614d87bd9900c305f92732252c46
+x
+Hproduct/src/main/java/com/paymentchain/controller/ProductController.java,e\b\eb0c6da7ed95ab16804d8b080dd118531a10b75c
