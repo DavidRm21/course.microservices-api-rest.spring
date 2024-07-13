@@ -4,14 +4,7 @@ import com.paymentchain.entities.Transaction;
 import com.paymentchain.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,6 +25,12 @@ public class TransactionController {
     public ResponseEntity<?> findById(@PathVariable("id") long id) {
         Transaction transaction = transactionRepository.findById(id).orElse(null);
         return ResponseEntity.ok(transaction);
+    }
+
+    @GetMapping("/customer/transaction")
+    public ResponseEntity<?> findByIban(@RequestParam("iban") String iban) {
+        List<Transaction> transactions = transactionRepository.findByAccountIban(iban);
+        return ResponseEntity.ok(transactions);
     }
 
     @PostMapping

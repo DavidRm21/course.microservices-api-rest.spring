@@ -35,3 +35,5 @@ D
 product/build.gradle,a\7\a76cbfcb530149cde8a9645b1e4835c843c7aa6a
 u
 Ecustomer/src/main/java/com/paymentchain/entities/CustomerProduct.java,3\5\357dc26b1f3c06f86b799cc3ddb96a392f01ab51
+u
+Etransactions/src/main/java/com/paymentchain/entities/Transaction.java,3\2\32b1383e9fbff076d8462c821d70d15a05998490
