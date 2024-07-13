@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/MicroserviciosApiRest.iml" filepath="$PROJECT_DIR$/.idea/MicroserviciosApiRest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/billing.main.iml" filepath="$PROJECT_DIR$/.idea/modules/billing.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/customer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/transactions.main.iml" filepath="$PROJECT_DIR$/.idea/modules/transactions.main.iml" />
     </modules>
   </component>
 </project>

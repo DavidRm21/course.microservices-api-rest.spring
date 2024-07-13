@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 @Log4j2
 @RestController
 @RequiredArgsConstructor
-public class CustomerControllerController {
+public class CustomerController {
 
     private final CustomerRepository customerRepository;
     private final WebClient.Builder webClientBuilder;
