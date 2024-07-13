@@ -6,3 +6,7 @@ server:
   port: 8001
   servlet:
     context-path: ${APP_PATH}
+
+springdoc:
+  api-docs:
+    enabled: ${SWAGGER_ENABLED}

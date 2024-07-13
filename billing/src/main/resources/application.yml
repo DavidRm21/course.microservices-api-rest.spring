@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: billing
+
+server:
+  port: 8010
+  servlet:
+    context-path: ${APP_PATH}
+
+#springdoc:
+#  api-docs:
+#    enabled: ${SWAGGER_ENABLED}

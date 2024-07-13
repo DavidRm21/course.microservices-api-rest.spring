@@ -15,7 +15,12 @@ import lombok.Setter;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
+    private String code;
+    private String iban;
     private String name;
+    private String surname;
     private String phone;
+    private String address;
+
 }
