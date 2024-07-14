@@ -10,6 +10,7 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +28,9 @@ import java.util.concurrent.TimeUnit;
 public class CustomerController {
 
     private final CustomerRepository customerRepository;
-    private final WebClient.Builder webClientBuilder;
+
+    @Autowired
+    private WebClient.Builder webClientBuilder;
 
     HttpClient client = HttpClient.create()
             .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 5000)
@@ -42,7 +45,7 @@ public class CustomerController {
 
     private String getProductName(long id){
         WebClient build = webClientBuilder.clientConnector(new ReactorClientHttpConnector(client))
-                .baseUrl("http://localhost:8002/product")
+                .baseUrl("http://PRODUCT/product")
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8002/product"))
                 .build();
@@ -53,7 +56,7 @@ public class CustomerController {
 
     private List<?> getTransactions(String iban){
         WebClient build = webClientBuilder.clientConnector(new ReactorClientHttpConnector(client))
-                .baseUrl("http://localhost:8003/transaction")
+                .baseUrl("http://TRANSACTIONS/transaction")
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .build();
 
@@ -81,9 +84,9 @@ public class CustomerController {
     public ResponseEntity<?> findByCode(@RequestParam String code) {
         log.info("Buscar por el codigo");
         Customer customer = customerRepository.findByCode(code);
-        log.info("Cleinte encontrado");
+        log.info("Cleinte encontrado: {}", customer);
         List<CustomerProduct> products = customer.getProducts();
-        log.info("productos obtenidos");
+        log.info("productos obtenidos: {}", products);
         products.forEach(x -> {
             String productName = getProductName(x.getId());
             x.setProductName(productName);

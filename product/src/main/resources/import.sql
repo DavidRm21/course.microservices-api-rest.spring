@@ -1,0 +1,10 @@
+insert into Product (id, code, name) values (1,'Apple', 'Apple iPad mini (2019)');
+insert into Product (id, code, name) values (2,'O2', 'O2 XDA Atom');
+insert into Product (id, code, name) values (3,'Qtek', 'Qtek 7070');
+insert into Product (id, code, name) values (4,'verykool', 'verykool R23');
+insert into Product (id, code, name) values (5,'Samsung', 'Samsung Galaxy W');
+insert into Product (id, code, name) values (6,'LG', 'LG K11 Plus');
+insert into Product (id, code, name) values (7,'LG', 'LG Vu 3 F300L');
+insert into Product (id, code, name) values (8,'Sharp', 'Sharp GX17');
+insert into Product (id, code, name) values (9,'Apple', 'Apple iPhone 3GS');
+insert into Product (id, code, name) values (10,'HTC', 'HTC 8XT');
