@@ -49,3 +49,7 @@ J
 config-server/build.gradle,9\e\9e9343d55cfc75598e543414688c2fc07bb5b139
 t
 Dconfig-server/src/main/java/com/payment/ConfigServerApplication.java,2\5\256bae2eedb9efd0417dd776ce04dd02878c04ee
+r
+Bspring-admin/src/main/java/com/payment/SpringAdminApplication.java,5\a\5afce7a5d2dea3764df9320771d2c1bebf84b682
+I
+spring-admin/build.gradle,1\7\1702ae2fc984c7fd47e50ed937a331e2e30a9142

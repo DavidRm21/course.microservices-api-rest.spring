@@ -2,6 +2,11 @@ spring:
   application:
     name: product
 
+  boot:
+    admin:
+      client:
+        url: http://localhost:8062
+
 server:
   port: 8002
   servlet:
@@ -19,3 +24,12 @@ eureka:
       defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
     register-with-eureka: true
     fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+  info:
+    env:
+      enabled: true

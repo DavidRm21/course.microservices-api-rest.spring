@@ -1,22 +1,8 @@
 spring:
   application:
-    name: transactions
-
-  boot:
-    admin:
-      client:
-        url: http://localhost:8062
-
+    name: spring-admin
 server:
-  port: 8003
-  servlet:
-    context-path: /transaction
-
-springdoc:
-  swagger-ui:
-    path: /swagger.html
-  api-docs:
-    enabled: true
+  port: 8062
 
 eureka:
   client:
